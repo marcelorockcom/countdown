@@ -100,6 +100,7 @@ p{
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
 }
 
 .circular-chart-2 {
@@ -118,8 +119,39 @@ p{
     stroke-linecap: round;
 }
 
+.loader{
+    position: absolute;
+    z-index: 3;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    animation: loader 1s ease-out forwards 1s;
+}
+
+img{
+    width: 3rem;
+}
+
+@keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+}
+
+@keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
 @media (max-width: 850px){
-    
 
     body{
         font-size: 1.2rem;

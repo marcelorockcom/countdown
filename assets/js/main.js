@@ -7,7 +7,6 @@ const segundosEl = countDown.querySelector('.segundos')
 
 setInterval(contador, 1000)
 
-
 function zeroEsquerda(num){
     if(Number(num) <= 9){
         return `0${num}`
@@ -32,10 +31,7 @@ function contador(){
     atualizaCircle(diasEl, dias, 365)
     atualizaCircle(horasEl, horas, 24)
     atualizaCircle(minutosEl, minutos, 60)
-    atualizaCircle(segundosEl, segundos, 60)
-
-        
-
+    atualizaCircle(segundosEl, segundos, 60)      
 }
 
 function atualizaNum(el, valor){
