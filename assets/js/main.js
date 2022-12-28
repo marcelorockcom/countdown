@@ -1,4 +1,4 @@
-const dataFim = new Date('2023-02-28T11:05')
+const dataFim = new Date('2023-02-24T11:05')
 const countDown = document.querySelector('.countdown')
 const diasEl = countDown.querySelector('.dias')
 const horasEl = countDown.querySelector('.horas')
